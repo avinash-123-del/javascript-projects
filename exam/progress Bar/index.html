@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProgressBar</title>
+    <style>
+        body{
+            height: 1500px;
+        }
+        .main{
+            height: 30px;
+            width: 300px;
+            background-color: black;
+            border:2px solid green;
+            border-radius: 20px;
+            margin: auto;
+            margin-top: 200px;
+            display: flex;
+            align-items: center;
+            padding: 5px;
+        }
+        .color{
+            width: 50%;
+            height: 30px;
+            border-radius: 20px;
+            background-color: rgb(167, 237, 167);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .coloradd{
+            width: 100%;
+            background-color: rgb(167, 237, 167);
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <!-- <input type="range" min="10" max="100"> -->
+    <div class="main">
+        <div class="color" id="color">0%</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

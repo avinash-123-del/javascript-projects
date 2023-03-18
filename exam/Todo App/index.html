@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/c572d5fadc.js" crossorigin="anonymous"></script>
+    <title>ToDo App</title>
+    <style>
+        body{
+            height: 40vh;
+            width: 50vw;
+            /* border: 2px solid black; */
+            border-radius: 10px;
+            margin: auto;
+            margin-top: 80px;
+            overflow: scroll;
+        }
+        .divClass{
+            padding: 10px 50px;
+            margin: auto;
+            overflow: hidden;
+            border-radius: 10px;
+
+        }
+        .inputClass{
+            width: 95%;
+            padding: 5px 10px;
+            height: 40px;
+            color: black;
+            font-size: 20px;
+            /* font-weight: bold; */
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+        .add_list{
+            width: 95%;
+            height: 40px;
+            padding: 5px 10px;
+            color: snow;
+            background-color: black;
+            font-size: 20px;
+            font-weight: bold;
+            border: 2px solid snow;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .add{
+            padding: 10px 50px;
+            height: 33vh;
+            overflow-y: scroll;
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+            display: flex;
+            flex-direction:column;
+
+        }
+        
+        li{
+            width: 70%;
+            list-style: none;
+            display: flex;
+            flex-direction: row-reverse;
+            text-align: start;
+            justify-content: start;
+            align-items: center;
+
+        }
+        li>i{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            left: 30px;
+        }
+        p{
+            width: 90%;
+        }
+        .main{
+            background-color: rgb(4, 49, 49);
+            border-radius: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="divClass">
+            <input type="text" name="" id="text" autofocus placeholder="Enter your text here....." class="inputClass">
+        </div>
+        <div id="add" class="add" >
+            <!-- <i class="fa-regular fa-circle-xmark"></i> -->
+        </div>
+    </div>
+
+    
+
+    <script src="script.js"></script>
+    
+</body>
+</html>

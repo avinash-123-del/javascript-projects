@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .heading{
+            display: none;
+        }
+        .heading2{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="h1">The most affordable learning platform</h1>
+    <h1 id="h11" class="heading">PW skills</h1>
+    <button onclick="toggler()">toggle button</button>
+    
+    <script>
+        function toggler() {
+            let h1 = document.getElementById("h1")
+            let h11 = document.getElementById("h11")
+            h1.classList.toggle("heading")
+            h11.classList.toggle("heading2")
+        }             
+        
+    </script>
+</body>
+</html>
